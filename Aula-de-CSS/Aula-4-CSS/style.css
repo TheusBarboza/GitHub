@@ -1,0 +1,33 @@
+html, body {
+    margin: 0;
+    padding: 0;
+}
+
+.header{
+    background-color: rgb(17, 17, 17);
+    padding: 8px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-family: Rubik, sans-serif;
+    color: white;
+    font-weight: 300;
+}
+
+.logo{
+    height: 55px;
+}
+
+.menu ul{
+    padding: 0;
+}
+.menu li{
+    display: inline;
+    margin: 0px 8px;
+}
+
+@media(max-width: 400px){
+    .header{
+        flex-direction: column;
+    }
+}
