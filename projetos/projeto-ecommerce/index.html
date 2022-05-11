@@ -9,6 +9,9 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Rubik&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="slide.css">  
+    <script src="script.js" defer></script>
+    
 </head>
 <body>
     <header class="header-container">
@@ -18,8 +21,10 @@
         <div class="container">
             <img src="logo.png" alt="Logotipo da Moto Show Peças" class="logo">
             <div class="divSearch">
-                <input type="text" class="searchBox" placeholder="Busque um produto">
+                <form action="/pesquisar_produto/">
+                    <input id="pProduto" type="text" class="searchBox" placeholder="Busque um produto">
                 <button type="submit" class="searchIcon"> <img src="icon/search-icon.png" alt="Buscar"></button>
+                </form>
             </div>
             <div class="userInteractionMenu">
                 <div class="int1">
@@ -45,8 +50,16 @@
             <p>Capacetes</p>
         </div>
     </section>
-    <div class="carrousel">
-        <img class="carrousel" src="tshow.png" alt="Catálogo Tshow">
-    </div>
+    <section>
+        <div>
+            <div>
+                <img src="tshow.png" alt="">
+            </div>
+            <div>
+                <img src="king.png" alt="">
+            </div>
+        </div>
+    </section>
+
 </body>
 </html>
