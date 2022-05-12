@@ -1,49 +1,72 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Moto Show Peças - Loja de Peças para motos e motocicletas</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" type="text/css" href="lib/slick-1.8.1/slick/slick.css" />
+    <link rel="stylesheet" type="text/css" href="lib/slick-1.8.1/slick/slick-theme.css" />
+    <link rel="stylesheet" href="styles/style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Rubik&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="slide.css">  
-    <script src="script.js" defer></script>
-    
+    <link rel="stylesheet" media="screen and (max-width: 774px)" href="styles/mobile.css">
+    <script src="js/script.js" defer></script>
 </head>
+
 <body>
     <header class="header-container">
         <h1 hidden>Moto Show Peças - Loja online de peças para motos</h1>
     </header>
-    <section>             <!-- Menu-->
-        <div class="container">
-            <img src="logo.png" alt="Logotipo da Moto Show Peças" class="logo">
+    <!--Menu-->
+    <section>
+        <nav class="container cMenu">
+            <img src="img/logo.png" alt="Logotipo da Moto Show Peças" class="logo">
             <div class="divSearch">
                 <form action="/pesquisar_produto/">
                     <input id="pProduto" type="text" class="searchBox" placeholder="Busque um produto">
-                <button type="submit" class="searchIcon"> <img src="icon/search-icon.png" alt="Buscar"></button>
+                    <button type="submit" class="searchIcon"> <img src="icon/search-icon.png" alt="Buscar"></button>
                 </form>
             </div>
-            <div class="userInteractionMenu">
-                <div class="int1">
-                    <img src="icon/chat-icon.png" alt="Atendimento">
-                    <p>Atendimento</p>
-                </div>
-                <div class="int1">
-                    <img src="icon/user-icon.png" alt="Usuário">
-                    <p>Minha conta</p>
-                </div>
-                <div class="int1">
-                    <img src="icon/cart-icon.png" alt="Meu carrinho">
-                    <p>Meu carrinho</p>
-                </div>
+            <!-- <div class="userInteractionMenu"> -->
+                <nav id="nav">
+                    <button id="btnMobile">Menu</button>
+                    <ul id="menu">
+                        <li>
+                            <a href="http://api.whatsapp.com/send/?phone=5582996390102">
+                                <div class="int1">
+                                    <img src="icon/chat-icon.png" alt="Atendimento">
+                                    <p>Atendimento</p>
+                                </div>
+                            </a>
+                        </li>
+                        <li>
+                            <a>
+                                <div class="int1">
+                                    <img src="icon/user-icon.png" alt="Usuário">
+                                    <p>Minha conta</p>
+                                </div>
+                            </a>
+                        </li>
+                        <li>
+                            <a>
+                                <div class="int1">
+                                    <img src="icon/cart-icon.png" alt="Meu carrinho">
+                                    <p>Meu carrinho</p>
+                                </div>
+                            </a>
+                        </li>
+                    </ul>
+                </nav>
             </div>
-        </div>
+        </nav>
     </section>
-    <section>             <!--Categorias-->
-        <div class="container category">
+    <!--Fim do Menu-->
+    <section>
+        <!--Categorias-->
+        <div class="category">
             <p>Todas as categorias</p>
             <p>Acessórios</p>
             <p>Peças</p>
@@ -51,15 +74,19 @@
         </div>
     </section>
     <section>
-        <div>
-            <div>
-                <img src="tshow.png" alt="">
-            </div>
-            <div>
-                <img src="king.png" alt="">
+        <!--Banner-->
+        <div class="cBanner">
+            <div class="banner">
+                <div><img src="img/tshow.png" alt=""></div>
+                <div><img src="img/king.png" alt=""></div>
             </div>
         </div>
     </section>
-
+    <section>
+        <div class="cInf"></div>
+    </section>
 </body>
+<script src="js/jquery-3.6.0.min.js"></script>
+<script src="lib/slick-1.8.1/slick/slick.js"></script>
+
 </html>

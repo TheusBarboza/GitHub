@@ -1,25 +1,31 @@
-html, body{
+html,
+body, ul{
     padding: 0;
     margin: 0;
-    width: 100%;
-    height: 100vh;
 }
-.header-container{
+
+.header-container {
     background-color: #02000D;
+    height: 30px;
+    display: flex;
+}
+
+.header-container img {
+    display: flex;
     height: 30px;
 }
 
-.container{
+.container {
     width: 100%;
     display: flex;
     background-color: #282830;
     height: 100px;
     align-items: center;
     justify-content: space-around;
- 
+
 }
 
-.divSearch{
+.divSearch {
     position: relative;
     background-color: #F2F2F2;
     width: 638px;
@@ -28,7 +34,7 @@ html, body{
 
 }
 
-.searchBox{
+.searchBox {
     display: flex;
     float: left;
     background-color: transparent;
@@ -39,34 +45,40 @@ html, body{
     border-radius: 10px;
 }
 
-.logo{
+.logo {
     display: flex;
     max-width: 250px;
     width: 100%;
 }
-.searchIcon{
+
+.searchIcon {
     position: absolute;
-    border:none;
-    background:transparent;
-    outline:none;
-    margin:11px 0px 0px -60px;
+    border: none;
+    background: transparent;
+    outline: none;
+    margin: 11px 0px 0px -60px;
     cursor: pointer;
 }
 
-.userInteractionMenu{
+.userInteractionMenu {
     display: flex;
     justify-content: center;
     align-items: center;
     width: 100%;
 }
 
-.userInteractionMenu, p{
+.userInteractionMenu ul {
+    list-style: none;
+}
+
+.userInteractionMenu,
+p {
     margin: 1px;
     max-width: 290px;
     width: 100%;
 }
 
-.int1{
+.int1 {
     display: flex;
     align-items: center;
     flex-direction: column;
@@ -76,7 +88,7 @@ html, body{
     color: white;
 }
 
-.category{
+.category {
     color: white;
     cursor: pointer;
     align-items: center;
@@ -91,3 +103,42 @@ html, body{
     text-align: center;
 }
 
+.cBanner img {
+    max-width: 1440px;
+    width: 100%;
+    margin: 0 auto;
+
+}
+
+.cInf {
+    background-color: #282830;
+    height: 100px;
+    margin-top: -4px;
+    display: flex;
+    border-top: 4px solid #FF520F;
+    border-bottom: 4px solid #FF520F;
+}
+
+.banner img {
+    width: 100%;
+}
+
+a {
+    color: white;
+    text-decoration: none;
+}
+a:hover{
+    background-color: #FF520F;
+}
+
+#menu{
+    display: flex;
+    gap: 1px;
+}
+#menu li{
+    list-style: none;
+}
+
+#btnMobile{
+    display: none;
+}
