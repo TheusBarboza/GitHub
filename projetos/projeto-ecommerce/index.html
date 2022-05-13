@@ -11,7 +11,7 @@
     <link rel="stylesheet" href="styles/style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Rubik&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200;300;400;500&display=swap" rel="stylesheet">
     <link rel="stylesheet" media="screen and (max-width: 774px)" href="styles/mobile.css">
     <script src="js/script.js" defer></script>
 </head>
@@ -22,17 +22,19 @@
     </header>
     <!--Menu-->
     <section>
-        <nav class="container cMenu">
-            <img src="img/logo.png" alt="Logotipo da Moto Show Peças" class="logo">
-            <div class="divSearch">
-                <form action="/pesquisar_produto/">
-                    <input id="pProduto" type="text" class="searchBox" placeholder="Busque um produto">
-                    <button type="submit" class="searchIcon"> <img src="icon/search-icon.png" alt="Buscar"></button>
-                </form>
-            </div>
-            <!-- <div class="userInteractionMenu"> -->
+        <div class="cContainer">
+            <div class="container cMenu">
+                <img src="img/logo.png" alt="Logotipo da Moto Show Peças" class="logo">
+                <div class="divSearch">
+                    <form action="/pesquisar_produto/">
+                        <input id="pProduto" type="text" class="searchBox" placeholder="Busque um produto">
+                        <button type="submit" class="searchIcon"> <img src="icon/search-icon.png" alt="Buscar"></button>
+                    </form>
+                </div>
                 <nav id="nav">
-                    <button id="btnMobile">Menu</button>
+                    <button id="btnMobile" aria-expanded="false">
+                        <span id="hamburguer"></span>
+                    </button>
                     <ul id="menu">
                         <li>
                             <a href="http://api.whatsapp.com/send/?phone=5582996390102">
@@ -61,7 +63,7 @@
                     </ul>
                 </nav>
             </div>
-        </nav>
+        </div>
     </section>
     <!--Fim do Menu-->
     <section>
@@ -83,7 +85,29 @@
         </div>
     </section>
     <section>
-        <div class="cInf"></div>
+        <div class="cInf">
+            <div class="inf" id="imgStore">
+                <img src="icon/store-icon.png" alt="">
+                <ul>
+                    <li id="retire">RETIRE</li>
+                    <li id="nloja">NA LOJA</li>
+                </ul>
+            </div>
+            <div class="inf" id="imgMpago">
+                <img src="icon/mPago.png" alt="">
+                <ul>
+                    <li id="parcele">PARCELE EM ATÉ</li>
+                    <li id="x12">12X SEM JUROS</li>
+                </ul>
+            </div>
+            <div class="inf" id="imgBr">
+                <img src="icon/br.png" alt="">
+                <ul>
+                    <li id="env">ENVIAMOS PARA</li>
+                    <li id="br">TODO BRASIL</li>
+                </ul>
+            </div>
+        </div>
     </section>
 </body>
 <script src="js/jquery-3.6.0.min.js"></script>

@@ -1,5 +1,6 @@
 html,
-body, ul{
+body,
+ul {
     padding: 0;
     margin: 0;
 }
@@ -99,8 +100,12 @@ p {
     justify-content: center;
     background-color: #FF520F;
     height: 48px;
-    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
     text-align: center;
+
+}
+
+#shadow {
+    box-shadow: 10px 10px #02000D;
 }
 
 .cBanner img {
@@ -117,6 +122,8 @@ p {
     display: flex;
     border-top: 4px solid #FF520F;
     border-bottom: 4px solid #FF520F;
+    justify-content: space-between;
+    padding-right: 30px;
 }
 
 .banner img {
@@ -127,18 +134,85 @@ a {
     color: white;
     text-decoration: none;
 }
-a:hover{
+
+a:hover {
     background-color: #FF520F;
 }
 
-#menu{
+#menu {
     display: flex;
     gap: 1px;
 }
-#menu li{
+
+#menu li {
     list-style: none;
 }
 
-#btnMobile{
+#btnMobile {
+    margin: 10px;
     display: none;
+}
+
+.cContainer {
+    width: 100%;
+    display: flex;
+    height: 100%;
+    align-items: center;
+    justify-content: space-around;
+    display: flex;
+}
+
+.inf {
+    display: flex;
+    align-items: center;
+}
+
+.inf ul {
+    list-style: none;
+    font-family: Oswald;
+    font-weight: 500;
+    color: white;
+}
+
+#retire {
+    margin-bottom: -16px;
+    font-size: 35px;
+}
+
+#nloja {
+    font-size: 30px;
+}
+
+#imgStore img {
+    max-height: 120px;
+}
+
+#imgMpago img {
+    max-height: 80px;
+    padding-right: 25px;
+}
+
+#parcele {
+    font-size: 30px;
+    margin-bottom: -16px;
+}
+
+#x12 {
+    font-size: 32px;
+}
+
+#imgBr img {
+    max-width: 90px;
+    width: 100%;
+    padding-right: 20px;
+
+}
+
+#env {
+    font-size: 26px;
+    margin-bottom: -16px;
+}
+
+#br {
+    font-size: 32px;
 }
