@@ -49,3 +49,22 @@ a:hover{
 #category_icons span{
     font-size: 18px;
 }
+
+.cBanner img {
+    max-width: 1440px;
+    width: 100%;
+    margin: 0 auto;
+
+}
+
+.banner img {
+    width: 100%;
+    max-width: 1440px;
+    margin: 0 auto;
+}
+
+.cBanner img {
+    max-width: 1440px;
+    width: 100%;
+    margin: 0 auto;
+}
