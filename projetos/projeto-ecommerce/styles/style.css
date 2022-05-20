@@ -98,7 +98,7 @@ p {
     display: flex;
     font-family: Oswald, sans-serif;
     justify-content: center;
-    background-color: #FF520F;
+    background-color: orangered;
     height: 48px;
     text-align: center;
 
@@ -135,10 +135,6 @@ a {
     text-decoration: none;
 }
 
-a:hover {
-    background-color: #FF520F;
-}
-
 #menu {
     display: flex;
     gap: 1px;
@@ -146,6 +142,18 @@ a:hover {
 
 #menu li {
     list-style: none;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+}
+
+#menu li:hover{
+    background: orangered;
+    transition: 0.8s;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    height: 100px;
 }
 
 #btnMobile {
